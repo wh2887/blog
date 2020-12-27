@@ -1,15 +1,25 @@
 <template>
   <div id="app">
-    hello world
+    <Nav/>
+    <router-view/>
   </div>
 </template>
+<script lang="js">
+import Nav from '@/components/Nav.vue'
+
+export default {
+  components: {Nav}
+}
+</script>
 
 <style lang="scss">
 @import "~@/assets/styles/helper.scss";
 @import "assets/styles/reset";
 
 #app {
-  background: #000;
+  background: #0D1117;
+  font-family: $font-hei;
+  font-size: 14px;
   height: 100vh;
   color: $color;
 }
