@@ -22,6 +22,8 @@ export default {
   font-size: 14px;
   height: 100vh;
   color: $color;
+  display: flex;
+  flex-direction: column;
 }
 
 </style>
