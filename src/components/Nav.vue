@@ -32,7 +32,7 @@ export default class Nav extends Vue {
   background: $nav-bg;
   display: flex;
   flex-direction: row-reverse;
-  box-shadow: 0 0 0 4px rgb(0,0,0,.5);
+  box-shadow: 0 0 4px 2px rgb(0,0,0,.5);
 
   > ul {
     width: 40%;

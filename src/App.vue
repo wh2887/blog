@@ -20,7 +20,7 @@ export default {
   background: #0D1117;
   font-family: $font-hei;
   font-size: 14px;
-  height: 100vh;
+  height: 100%;
   color: $color;
   display: flex;
   flex-direction: column;
