@@ -12,6 +12,8 @@
             </div>
           </div>
           文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容
+          <br/>
+          <button>按钮</button>
         </div>
         <div class="item article">
           <div class="article-header">
@@ -70,6 +72,7 @@ export default class Home extends Vue {
 <style lang="scss" scoped>
 @import "~@/assets/styles/helper.scss";
 
+$test-color: #0062FF;
 .home-wrapper {
   flex: 1;
   padding: 0 10px;
@@ -116,16 +119,34 @@ export default class Home extends Vue {
       padding: .5em;
 
       > .article-header {
-        .tags{
+        .tags {
           padding-top: .5em;
           padding-bottom: 1em;
-          > img{
+
+          > img {
             width: 100%;
             max-height: 260px;
             object-fit: cover;
             margin-top: .5em;
             border-radius: $box-radius;
           }
+        }
+      }
+
+      > button {
+        outline: none;
+        border: 1px solid $test-color;
+        border-radius: 4px;
+        color: $test-color;
+        background: white;
+        padding: 4px 16px;
+        margin-top: 10px;
+
+        &:hover {
+          background: rgba($test-color, 0.1);
+        }
+        &:active {
+          background: rgba($test-color, 0.9);
         }
       }
     }
